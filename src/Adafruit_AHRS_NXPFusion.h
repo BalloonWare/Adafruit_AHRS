@@ -79,6 +79,11 @@ public:
   void update(float gx, float gy, float gz, float ax, float ay, float az,
               float mx, float my, float mz);
 
+  // dummy no-ops
+  void updateIMU(float gx, float gy, float gz, float ax, float ay, float az){};
+  void updateIMU(float gx, float gy, float gz, float ax, float ay, float az,
+                 float dt){};
+
   float getRoll() { return PhiPl; }
   float getPitch() { return ThePl; }
   float getYaw() { return PsiPl; }
